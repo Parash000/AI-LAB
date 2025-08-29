@@ -2,9 +2,6 @@ def
 
 vacuum_world():
 
- # initializing goal_state
-
- # 0 indicates Clean and 1 indicates Dirty
 
  goal_state = {'A': '0', 'B': '0'}
 
@@ -24,7 +21,7 @@ location is dirty or clean
 
  if location_input == 'A':
 
- # Location A is Dirty.
+
 
  print("Vacuum is placed in Location A")
 
@@ -32,7 +29,7 @@ location is dirty or clean
 
  print("Location A is Dirty.")
 
- # suck the dirt and mark it as clean
+
 
  goal_state['A'] = '0'
 
@@ -44,7 +41,7 @@ location is dirty or clean
 
  if status_input_complement == '1':
 
- # if B is Dirty
+
 
  print("Location B is Dirty.")
 
@@ -54,7 +51,7 @@ location is dirty or clean
 
  print("COST for moving RIGHT" + str(cost))
 
- # suck the dirt and mark it as clean
+
 
  goal_state['B'] = '0'
 
@@ -68,7 +65,7 @@ location is dirty or clean
 
  print("No action" + str(cost))
 
- # suck and mark clean
+
 
  print("Location B is already clean.")
 
@@ -87,7 +84,7 @@ if status_input == '0':
 
  print("COST for moving RIGHT " + str(cost))
 
- # suck the dirt and mark it as clean
+
 
  goal_state['B'] = '0'
 
@@ -103,7 +100,6 @@ if status_input == '0':
 
  print(cost)
 
- # suck and mark clean
 
  print("Location B is already clean.")
 
@@ -111,13 +107,13 @@ if status_input == '0':
 
  print("Vacuum is placed in location B")
 
- # Location B is Dirty.
+
 
  if status_input == '1':
 
  print("Location B is Dirty.")
 
- # suck the dirt and mark it as clean
+
 
  goal_state['B'] = '0'
 
@@ -129,7 +125,6 @@ if status_input == '0':
 
  if status_input_complement == '1':
 
- # if A is Dirty
 
  print("Location A is Dirty.")
 
@@ -139,7 +134,6 @@ if status_input == '0':
 
  print("COST for moving LEFT" + str(cost))
 
- # suck the dirt and mark it as clean
 
  goal_state['A'] = '0'
 
@@ -153,7 +147,7 @@ if status_input == '0':
 
  print(cost)
 
- # suck and mark clean
+
 
 print("Location B is already clean.")
 
@@ -167,7 +161,6 @@ print("Location B is already clean.")
 
  print("COST for moving LEFT " + str(cost))
 
- # suck the dirt and mark it as clean
 
  goal_state['A'] = '0'
 
@@ -181,11 +174,9 @@ print("Location B is already clean.")
 
  print("No action " + str(cost))
 
- # suck and mark clean
 
  print("Location A is already clean.")
 
- # done cleaning
 
  print("GOAL STATE: ")
 
